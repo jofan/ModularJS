@@ -1,0 +1,50 @@
+.calendar {
+	background-color:#fff;
+	border:1px solid #ccc;
+	display:inline-block;
+	font-family:arial;
+	position:absolute;
+	z-index:100;
+}	
+	.calendar caption {
+		background-color: #DDD;
+		font-size:1.1em;
+		font-weight:bold;
+		padding:6px 0;
+	}
+		.calendar .nextMonth {
+			margin-left:6px;
+		}
+		.calendar .prevMonth {
+			margin-right:6px;
+		}
+	.calendar a:link, .calendar a:visited {
+		text-decoration:none;
+	}
+	.calendar th {
+		color:#999;
+		font-size:0.7em;
+	}
+	.calendar td {
+		border:1px solid #ccc;
+		color:#333;
+		cursor:pointer;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:2px 3px;
+		text-align:center;
+		width:26px;
+	}
+	.calendar td:hover {
+		background-color:#ff0;	
+	}
+	.calendar .extraDay {
+		color:#999;
+		cursor:default;
+	}
+	.calendar .selected {
+		background-color:#ffc;
+	}
+	.calendar .today {
+		background-color:#eee;
+	}

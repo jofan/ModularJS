@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>MJS - Contact Form Module POC</title>
+  <link rel="stylesheet" type="text/css" media="all"  href="css/oocss/core/libraries.css" />
+  <link rel="stylesheet" type="text/css" media="all"  href="css/oocss/core/template/template.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/core/grid/grids.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/core/content.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/core/module/mod.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/core/module/mod_skins.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/plugins/talk/talk.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/oocss/plugins/talk/talk_skins.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/widgets.css" />
+  <!--<link rel="stylesheet" type="text/css" media="all" href="css/mod_debug.css" /> -->
+  <style type="text/css" media="screen">
+    fieldset {border:1px solid #333;padding:15px;}
+    legend {background-color:#000; color:#ddd; font-size:140%; padding:5px;}
+    input:focus, textarea:focus {border:1px solid red;}
+    .mod {width: 500px;}
+    .line {margin-bottom:10px;}
+    .bubble {display:none;}
+    .debug {
+      border:1px dotted red;
+      background-color:#ccc;
+    }
+  </style>
+</head>
+<body>
+  <input type="hidden" name="pageName" value="pocmodule" id="pageName">
+  <div id="ContactForm" class="mod">
+    <form id="contactform_form" name="contactform">
+      <fieldset id="contactform_fieldset" class="">
+        <legend>Contact form</legend>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="name">Name</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" name="name" value="" id="name">
+            <div class="mod bubble bubbleLeft lol">
+      				<b class="top"><b class="tl"></b><b class="tr"></b></b>
+      				<div class="inner">
+      					<div class="hd fire">
+      						<h3>Name</h3>
+      					</div>
+      					<div class="bd">
+      						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      					</div>
+      				</div>
+      				<b class="bottom"><b class="bl"></b><b class="br"></b></b>
+      			</div>
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="email">Email</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" name="email" value="" id="email">
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="dob">Date of birth</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" data-events="datepicker" name="dob" value="" id="dob">
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="comment">Comment</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <textarea id="comment"></textarea>
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size1of1">
+            <input type="checkbox" name="agree" value="" id="agree"> <label for="agree">I agree to allowing you to publish my email</label>
+          </div>
+        </div>
+        
+      </fieldset>
+    </form>
+  </div> <!-- END div#contactform -->
+  
+  <div id="BookingForm" class="mod">
+    <form id="bookingform_form" name="contactform">
+      <fieldset id="bookingform_fieldset" class="">
+        <legend>Booking form</legend>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="name2">Name</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" name="name2" value="" id="name2">
+            <div class="mod bubble bubbleLeft lol">
+      				<b class="top"><b class="tl"></b><b class="tr"></b></b>
+      				<div class="inner">
+      					<div class="hd fire">
+      						<h3>Name</h3>
+      					</div>
+      					<div class="bd">
+      						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      					</div>
+      				</div>
+      				<b class="bottom"><b class="bl"></b><b class="br"></b></b>
+      			</div>
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="email2">Email</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" name="email2" value="" id="email2">
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="dod">Date of departure</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" data-events="datepicker2" name="dod" value="" id="dod">
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="dor">Date of return</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <input type="text" data-events="datepicker2" name="dor" value="" id="dor">
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size2of5">
+            <label for="comment2">Comment</label>
+          </div>
+          <div class="unit size3of5 lastUnit">
+            <textarea id="comment2"></textarea>
+          </div>
+        </div>
+        
+        <div class="line">
+          <div class="unit size1of1">
+            <input type="checkbox" name="agree2" value="" id="agree2"> <label for="agree2">I agree to allowing you to publish my email</label>
+          </div>
+        </div>
+        
+      </fieldset>
+    </form>
+  </div> <!-- END div#bookingform -->
+  
+  <script type="text/javascript" charset="utf-8" src="js/jquery-1.4.2.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js2/mootools-1.2.4-core-nc.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js2/mootools-1.2.4.4-more.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js2/mjs.core.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/bus.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/interface.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/events.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/widgets.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js2/mjs.module.mixins.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js2/mjs.module.base.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js2/mjs.modules.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="js2/mjs.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js2/mjs.debug.js"></script>
+</body>
+</html>

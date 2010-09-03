@@ -1,0 +1,97 @@
+﻿/* === CALENDAR === */
+.calendar {
+	background-color:#fff;
+	border:1px solid #ccc;
+	display:inline-block;
+	font-family:arial;
+	position:absolute;
+	z-index:100;
+}	
+	.calendar caption {
+		background-color: #DDD;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:6px 0;
+		text-align:center;
+	}
+		.calendar .nextMonth {
+			margin-left:6px;
+		}
+		.calendar .prevMonth {
+			margin-right:6px;
+		}
+	.calendar a:link, .calendar a:visited {
+		text-decoration:none;
+	}
+	.calendar th {
+		color:#999;
+		font-size:0.7em;
+		text-align:center;
+	}
+	.calendar td {
+		border:1px solid #ccc;
+		color:#333;
+		cursor:pointer;
+		font-size:0.9em;
+		font-weight:bold;
+		padding:2px 3px;
+		text-align:center;
+		width:26px;
+	}
+	.calendar td:hover {
+		background-color:#ff0;	
+	}
+	.calendar .extraDay {
+		color:#999;
+		cursor:default;
+	}
+	.calendar .selected {
+		background-color:#ffc;
+	}
+	.calendar .today {
+		background-color:#eee;
+	}
+	
+/* === SERVER INFO === */
+#performance {
+	position:absolute;
+	top:0;
+	left:0;
+	width:50px;
+	height:50px;
+	z-index:998;
+}
+.requestinformation {
+	position:absolute;
+	top:50px;
+	left:10px;
+	padding:20px;
+	background-color:#fff;
+	border:1px dotted #333;
+	display:none;
+	z-index:999;
+}
+
+/* === WORK IN PROGRESS === */
+.lightbox.popup
+{
+	position: absolute;
+	margin-left: 310px;
+	top: 200px;
+	width: 336px;
+	padding: 35px 0;
+	background-color: #fff;
+	border: solid 2px #333;
+}
+.popup .logoimg 
+{
+  margin:0 0 25px -40px;
+}
+.popup_msg
+{
+  padding-top: 25px;
+	text-align: center;
+	font-style: italic;
+  color: #333;
+	font-size: 1.273em;
+}

@@ -1,0 +1,30 @@
+Make sure there are fixes for IE and Webkit event delegation problems
+- Change does not bubble in IE, this is the fix.
+  fixChange: function(data) {
+    var ele = data.ele,
+        eType = data.type,
+        blurValue;
+    try {
+      if(ele.tagName === "INPUT" || ele.tagName === "SELECT") {
+        if(eType === 'focus') {
+          App.events.fieldValue = $(ele).val();
+        }
+        else if (eType === 'blur') {
+          blurValue = $(ele).val();
+          if(blurValue !== App.events.fieldValue) {
+            data.type = 'change';
+            App.events.handleEvent('', data);
+          }
+          App.events.fieldValue = '';
+        }
+      }
+    }
+    catch(err) {
+      
+    }
+  },
+  
+- Webkit does not send focus and blur events when checkboxes and radio buttons are clicked
+  Solve by making a global check when the click event is fired
+  Find if the browser is Webkit and if so check if the clicked element is a checkbox or radio button
+  If it is then fire the .focus() event on the element.
